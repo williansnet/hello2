@@ -1,5 +1,17 @@
-﻿var numeroDeVezes = 1000;
+﻿using System.Collections;
 
-for(int i = 0; i < numeroDeVezes; i++){
-    Console.WriteLine($"Microsoft .NET {i}");
-}
+Stack st = new Stack();
+
+st.Push('A');
+st.Push('B');
+st.Push('C');
+
+/* st.Pop(); */
+//st.Pop();
+//st.Pop();
+
+var stSize = st.Count;
+
+Console.Write(stSize.ToString());
+Console.WriteLine();
+Console.Write(st.Contains('B'));
